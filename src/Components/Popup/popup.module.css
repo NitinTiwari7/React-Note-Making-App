@@ -1,0 +1,180 @@
+.popup_container{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    height: 38vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+}
+.popup{
+    /* border: 1px solid black; */
+    display:  flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin-left: 10%;
+}
+.heading{
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+.subHeading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.name_container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.name_container input{
+    border: 2px solid #CCCCCC;
+    height: 3vh;
+    padding:8px;
+    width: 20vw;
+    border-radius: 22px;
+}
+.choice_container{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.container{
+    margin-left: 1rem;
+    display: flex;
+    /* border: 2px solid black; */
+}
+.colorDiv{
+    margin-left: 0.5rem;
+    flex-wrap: wrap;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+}
+.colorDiv:hover{
+    cursor: pointer;
+}
+.create_button{
+background-color: black;
+color: white;
+border: black;
+height: 3rem;
+width: 10vw;
+font-size: 2vw;
+border-radius: 11px;
+}
+.create_button:hover{
+    cursor: pointer;
+}
+.button{
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+}
+@media(min-width: 600px) and (max-width: 767px){
+    .popup_container{
+        height: 28vh;
+        width: 90vw;
+    }
+    .heading{
+
+    }
+    .subHeading{
+
+    }
+    .colorDiv{
+        height: 2rem;
+        width: 2rem;
+    }
+    .name_container input{
+        width: 30vw;
+        height: 2vh;
+    }
+    .create_button{
+        height: 3rem;
+        width: 6rem;
+    }
+
+}
+@media(min-width: 572px) and (max-width: 596px){
+    .popup_container{
+        height: 28vh;
+        width: 90vw;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .subHeading{
+        font-size: 1.5rem;
+    }
+    .colorDiv{
+        height: 2rem;
+        width: 2rem;
+    }
+    .name_container input{
+        width: 30vw;
+        height: 2vh;
+    }
+    .create_button{
+        height: 3rem;
+        width: 6rem;
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 420px) and (max-width: 572px){
+    .popup_container{
+        height: 28vh;
+        width: 90vw;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .subHeading{
+        font-size: 1.5rem;
+    }
+    .colorDiv{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .name_container input{
+        width: 30vw;
+        height: 2vh;
+    }
+    .create_button{
+        height: 3rem;
+        width: 5rem;
+        font-size: 1rem;
+    }
+}
+@media(min-width: 0px) and (max-width: 420px){
+    .popup_container{
+        height: 22vh;
+        width: 90vw;
+    }
+    .heading{
+        font-size: 6vw;
+    }
+    .subHeading{
+        font-size: 4vw;
+    }
+    .colorDiv{
+        height: 3vw;
+        width: 3vw;
+    }
+    .name_container input{
+        width: 30vw;
+        height: 1.5vh;
+    }
+    .create_button{
+        height: 7vw;
+        width: 20vw;
+        font-size: 4vw;
+    }
+}
